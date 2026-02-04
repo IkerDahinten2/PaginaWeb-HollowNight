@@ -1,0 +1,106 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+}
+
+/* Cuerpo */
+body {
+  margin: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+
+  background-image: url("../images/fondo pagina 3.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Contenedor general */
+section {
+  background-color: rgba(0, 0, 0, 0.55);
+  padding: 25px;
+  border-radius: 15px;
+  margin-bottom: 40px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+}
+
+/* Títulos */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px #000;
+}
+
+h2 {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  color: #9ad9ff;
+}
+
+/* Texto */
+p {
+  text-align: justify;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Enlaces */
+a {
+  color: #9ad9ff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Imágenes */
+img {
+  display: block;
+  margin: 15px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.8);
+}
+
+/* FORMULARIO */
+form {
+  background-color: rgba(20, 20, 20, 0.8);
+  padding: 25px;
+  border-radius: 15px;
+  margin-top: 40px;
+}
+
+form h2 {
+  text-align: center;
+}
+
+/* Inputs generales */
+input, button {
+  width: 100%;
+  margin: 8px 0 15px;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  font-size: 14px;
+}
+
+/* Inputs especiales */
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+  margin-right: 8px;
+}
+
+/* Botones */
+input[type="submit"],
+input[type="reset"] {
+  background-color: #9ad9ff;
+  color: #000;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: #6fbfe6;
+}

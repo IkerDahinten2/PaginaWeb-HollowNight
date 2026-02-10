@@ -15,7 +15,13 @@ body {
   background-attachment: fixed;
 }
 
-/* Contenedor general */
+/* Contenedor */
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Secciones */
 section {
   background-color: rgba(0, 0, 0, 0.55);
   padding: 25px;
@@ -54,44 +60,60 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Imágenes */
-img {
+/* Imágenes (tamaños ahora desde CSS) */
+.intro img {
+  width: 300px;
+}
+
+.tool img {
+  width: 350px;
+}
+
+section img {
   display: block;
   margin: 15px auto;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.8);
 }
 
-/* FORMULARIO */
+/* Navegación */
+.nav-links {
+  text-align: center;
+  margin-top: 15px;
+}
+
+/* Tablas */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 25px 0;
+}
+
+th, td {
+  border: 1px solid #9ad9ff;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: rgba(154, 217, 255, 0.2);
+}
+
+/* Formulario */
 form {
   background-color: rgba(20, 20, 20, 0.8);
   padding: 25px;
   border-radius: 15px;
-  margin-top: 40px;
 }
 
-form h2 {
-  text-align: center;
-}
-
-/* Inputs generales */
-input, button {
+input {
   width: 100%;
-  margin: 8px 0 15px;
+  margin: 10px 0;
   padding: 10px;
   border-radius: 8px;
   border: none;
-  font-size: 14px;
 }
 
-/* Inputs especiales */
-input[type="radio"],
-input[type="checkbox"] {
-  width: auto;
-  margin-right: 8px;
-}
-
-/* Botones */
 input[type="submit"],
 input[type="reset"] {
   background-color: #9ad9ff;
@@ -100,7 +122,10 @@ input[type="reset"] {
   font-weight: bold;
 }
 
-input[type="submit"]:hover,
-input[type="reset"]:hover {
-  background-color: #6fbfe6;
+/* Imagen de personajes secundarios */
+#Personajes-secundarios img {
+  max-width: 90%;
+  height: auto;
+  margin: 25px auto;
+  display: block;
 }

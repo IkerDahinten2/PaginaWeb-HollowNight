@@ -129,3 +129,91 @@ input[type="reset"] {
   margin: 25px auto;
   display: block;
 }
+
+
+h1 {
+  text-shadow: 0 0 8px #9ad9ff, 0 0 15px rgba(154, 217, 255, 0.4);
+}
+
+h2 {
+  text-shadow: 0 0 6px rgba(154, 217, 255, 0.6);
+}
+
+
+section img {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+section img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(154, 217, 255, 0.5);
+}
+
+
+section {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+table tr {
+  transition: background-color 0.3s ease;
+}
+
+table tr:hover {
+  background-color: rgba(154, 217, 255, 0.1);
+}
+
+
+
+input[type="submit"],
+input[type="reset"] {
+  transition: all 0.3s ease;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(154, 217, 255, 0.6);
+}
+
+
+
+@media (max-width: 768px) {
+  body {
+    margin: 20px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  table {
+    font-size: 14px;
+  }
+
+  section img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+/* Imagen específica de Silksong */
+.silksong-img {
+  width: 500px;
+  max-width: 90%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}
